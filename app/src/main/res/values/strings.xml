@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="hint_default_value" translatable="false">0</string>
+</resources>

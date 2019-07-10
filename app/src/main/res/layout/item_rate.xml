@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/activity_horizontal_dimen"
+    android:paddingEnd="@dimen/activity_horizontal_dimen"
+    android:paddingBottom="@dimen/dimen_6dp"
+    android:paddingTop="@dimen/dimen_6dp">
+
+    <TextView
+        android:id="@+id/textview_rate_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:id="@+id/textview_rate_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_rate_key"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/edit_value"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    <EditText
+        android:id="@+id/edit_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/activity_horizontal_dimen"
+        android:paddingEnd="@dimen/activity_horizontal_dimen"
+        android:importantForAutofill="no"
+        android:hint="@string/hint_default_value"
+        tools:targetApi="o"
+        android:imeOptions="actionDone"
+        android:inputType="numberSigned|numberDecimal"
+        android:singleLine="true"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>
